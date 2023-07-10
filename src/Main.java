@@ -97,9 +97,9 @@ public class Main {
 
     public static void task4() {
         System.out.println("Задача 4");
-        int[] number ={1, 2, 42, 24144, 124125532, 12, 1, 5, 9};
+        int[] number = {1, 2, 42, 24144, 124125532, 12, 1, 5, 9};
         for (int i = 0; i < number.length; i++) {
-            if (number[i] % 2 != 0){
+            if (number[i] % 2 != 0) {
                 int numberOdd = number[i] + 1;
                 System.out.println(numberOdd);
             } else {
