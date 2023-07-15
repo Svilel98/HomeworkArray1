@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -34,10 +36,9 @@ public class Main {
         number1[1] = 2;
         number1[2] = 3;
         for (int i = 0; i < number1.length; i++) {
-            if (i < number1.length - 1) {
-                System.out.print(number1[i] + ", ");
-            } else {
-                System.out.print(number1[i]);
+            System.out.print(number1[i]);
+            if (i != number1.length - 1) {
+                System.out.print(", ");
             }
         }
         System.out.println();
@@ -98,14 +99,14 @@ public class Main {
     public static void task4() {
         System.out.println("Задача 4");
         int[] number = {1, 2, 42, 24144, 124125532, 12, 1, 5, 9};
+        for (int i : number) {
+        }
         for (int i = 0; i < number.length; i++) {
             if (number[i] % 2 != 0) {
-                int numberOdd = number[i] + 1;
-                System.out.println(numberOdd);
-            } else {
-                System.out.println(number[i]);
+                number[i]++;
             }
         }
+        System.out.println(Arrays.toString(number));
     }
 }
 
